@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SoundQR — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d0d0d;
+      color: #e0e0e0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      padding: 0 16px 64px;
+    }
+
+    header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 0 32px;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .logo-sound { color: #ffffff; font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+    .logo-qr    { color: #1affa3; font-size: 24px; font-weight: 700; letter-spacing: -0.5px; }
+
+    header p {
+      color: rgba(255,255,255,0.45);
+      font-size: 14px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding-top: 40px;
+    }
+
+    h1 {
+      color: #ffffff;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .effective-date {
+      color: #1affa3;
+      font-size: 13px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #1affa3;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin: 40px 0 12px;
+    }
+
+    p { margin-bottom: 12px; }
+
+    ul {
+      margin: 8px 0 12px 0;
+      padding-left: 20px;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    .highlight {
+      background: #111;
+      border-left: 3px solid #1affa3;
+      border-radius: 0 6px 6px 0;
+      padding: 14px 18px;
+      margin: 16px 0;
+      color: #ccffec;
+    }
+
+    a { color: #1affa3; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      max-width: 720px;
+      margin: 64px auto 0;
+      padding-top: 24px;
+      border-top: 1px solid #1a1a1a;
+      color: rgba(255,255,255,0.3);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <span class="logo-sound">Sound</span><span class="logo-qr">QR</span>
+    </div>
+    <p>Your voice, encoded in QR.</p>
+  </header>
+
+  <main>
+    <h1>Privacy Policy</h1>
+    <p class="effective-date">Effective date: May 1, 2026</p>
+
+    <div class="highlight">
+      SoundQR is a fully offline app. It does not collect, transmit, or share any personal
+      data with external servers, third parties, or anyone else.
+    </div>
+
+    <h2>1. Information We Do Not Collect</h2>
+    <p>SoundQR does not collect, store remotely, or transmit:</p>
+    <ul>
+      <li>Voice recordings or audio data</li>
+      <li>QR codes or encoded payloads</li>
+      <li>Encryption passwords</li>
+      <li>Device identifiers</li>
+      <li>Location data</li>
+      <li>Usage analytics or crash reports</li>
+    </ul>
+
+    <h2>2. Permissions and How They Are Used</h2>
+
+    <p><strong>Microphone (RECORD_AUDIO)</strong><br>
+    Used solely to record your voice within the app. Audio is processed entirely on your
+    device using the Codec2 audio codec and is never uploaded or transmitted anywhere.</p>
+
+    <p><strong>Camera (CAMERA)</strong><br>
+    Used solely to scan QR codes through the in-app camera viewfinder. Camera frames are
+    processed on-device in real time and are never saved or transmitted.</p>
+
+    <p><strong>Storage (WRITE_EXTERNAL_STORAGE — Android 8 and below only)</strong><br>
+    Used to save QR code images to your device's storage when you choose to save them.
+    No files are uploaded or shared without your explicit action.</p>
+
+    <h2>3. On-Device Storage</h2>
+    <p>
+      SoundQR stores a local history of your encoded QR sessions in a database on your
+      device. This includes timestamps, recording durations, codec settings, and QR
+      thumbnail images. This data never leaves your device and can be deleted at any
+      time from within the app.
+    </p>
+
+    <h2>4. Encryption</h2>
+    <p>
+      SoundQR offers optional AES-256-GCM encryption for QR payloads. If you choose to
+      encrypt, a password you provide is used to derive an encryption key on your device
+      using PBKDF2. The password is never stored, logged, or transmitted — it exists only
+      in memory for the duration of the operation.
+    </p>
+
+    <h2>5. Third-Party Services</h2>
+    <p>
+      SoundQR does not integrate any third-party analytics, advertising, crash reporting,
+      or cloud services. The app functions entirely without an internet connection.
+    </p>
+
+    <h2>6. Children's Privacy</h2>
+    <p>
+      SoundQR does not knowingly collect any information from anyone, including children
+      under the age of 13. Because no data is collected at all, the app poses no privacy
+      risk to users of any age.
+    </p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      If this privacy policy changes, the updated version will be posted at this URL with
+      a new effective date. Continued use of the app after changes constitutes acceptance
+      of the updated policy.
+    </p>
+
+    <h2>8. Contact</h2>
+    <p>
+      If you have questions about this privacy policy, contact:<br>
+      <a href="mailto:vicxander@gmail.com">vicxander@gmail.com</a>
+    </p>
+  </main>
+
+  <footer>
+    <p>Copyright &copy; 2026 VicXander Software. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
